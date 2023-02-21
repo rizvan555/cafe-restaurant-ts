@@ -21,7 +21,7 @@ const options = [
   'Umbriel',
 ];
 
-const ITEM_HEIGHT = 50;
+const ITEM_HEIGHT = 48;
 
 export default function LongMenu() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);

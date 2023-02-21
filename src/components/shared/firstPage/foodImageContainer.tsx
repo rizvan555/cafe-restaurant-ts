@@ -8,12 +8,12 @@ import food4 from '../../../resource/images/food4.jpg';
 const FoodImageStyled = styled.ul`
   display: flex;
   padding: 10px 20px;
-  gap: 15px;
+  gap: 25px;
   list-style-type: none;
 
 
   li img {
-    width: 20vw;
+    width: 18vw;
   }
 `;
 function FoodImageContainer() {
