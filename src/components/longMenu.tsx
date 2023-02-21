@@ -2,7 +2,7 @@ import * as React from 'react';
 import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const options = [
   'None',
@@ -21,7 +21,7 @@ const options = [
   'Umbriel',
 ];
 
-const ITEM_HEIGHT = 48;
+const ITEM_HEIGHT = 50;
 
 export default function LongMenu() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -43,7 +43,7 @@ export default function LongMenu() {
         aria-haspopup="true"
         onClick={handleClick}
       >
-        <MoreVertIcon />
+        <MenuIcon />
       </IconButton>
       <Menu
         id="long-menu"
@@ -56,7 +56,7 @@ export default function LongMenu() {
         PaperProps={{
           style: {
             maxHeight: ITEM_HEIGHT * 4.5,
-            width: '20ch',
+            width: '50vw',
           },
         }}
       >
