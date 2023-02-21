@@ -90,6 +90,17 @@ function App() {
           </div>
           <FoodImageContainer />
         </section>
+        <section className="second_page__section">
+          <article className="second_page__article1">
+            <h3></h3>
+            <p></p>
+            <button></button>
+          </article>
+          <image className="second_page__image">
+            <img src="" alt="" />
+          </image>
+          <div className="second_page__red-round"></div>
+        </section>
       </Main>
     </div>
   );
