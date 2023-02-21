@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import FoodImageContainer from '../components/shared/firstPage/foodImageContainer';
-import MenuButton from '../components/shared/firstPage/menu-button';
+import FoodImageContainer from '../components/shared/firstPageShared/foodImageContainer';
+import MenuButton from '../components/shared/firstPageShared/menu-button';
 import chef1 from '../resource/images/chef1.jpg';
-import LongMenu from '../components/shared/firstPage/longMenu';
+import LongMenu from '../components/shared/firstPageShared/longMenu';
+import ChefLogo from '../resource/images/chef-logo.png';
 
 const FirstPageStyle = styled.div``;
 const Header = styled.header`
@@ -11,9 +12,9 @@ const Header = styled.header`
   justify-content: center;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
-  h3 {
-    font-size: 2rem;
+  padding: 10px 30px;
+  .logo {
+    width: 5vw;
     color: #000;
   }
 `;
@@ -61,7 +62,7 @@ function FirstPage() {
   return (
     <FirstPageStyle>
       <Header>
-        <h3 className="logo">Logo</h3>
+        <img src={ChefLogo} className="logo" />
         <LongMenu />
       </Header>
       <Main1>
@@ -88,7 +89,6 @@ function FirstPage() {
           </div>
           <FoodImageContainer />
         </section>
-        
       </Main1>
     </FirstPageStyle>
   );

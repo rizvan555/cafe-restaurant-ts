@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import LearnMoreButton from '../components/shared/secondPage/learnMoreButton';
+import LearnMoreButton from '../components/shared/secondPageShared/learnMoreButton';
 
 const SecondPageStyle = styled.div`
   display: flex;
