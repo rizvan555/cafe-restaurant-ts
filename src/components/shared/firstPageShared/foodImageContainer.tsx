@@ -13,37 +13,42 @@ const FoodImageStyled = styled.ul`
 
   li img {
     width: 18vw;
+    animation: backInRight;
+    animation-duration: 2s;
   }
   li img:hover {
     transform: scale(1.1);
     transition: all 0.4s ease-in-out;
   }
 `;
+
 function FoodImageContainer() {
   return (
-    <FoodImageStyled>
-      <li>
-        <a href="">
-          <img src={food1} alt="food1" />
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <img src={food2} alt="food2" />
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <img src={food3} alt="food3" />
-        </a>
-      </li>
-      <li>
-        <a href="">
-          {' '}
-          <img src={food4} alt="food4" />
-        </a>
-      </li>
-    </FoodImageStyled>
+    <div>
+      <FoodImageStyled>
+        <li>
+          <a href="#">
+            <img src={food1} alt="food1" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src={food2} alt="food2" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src={food3} alt="food3" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            {' '}
+            <img src={food4} alt="food4" />
+          </a>
+        </li>
+      </FoodImageStyled>
+    </div>
   );
 }
 

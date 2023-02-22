@@ -16,6 +16,13 @@ const Header = styled.header`
   .logo {
     width: 5vw;
     color: #000;
+    z-index: 4;
+  }
+  .logo1 {
+    position: fixed;
+    width: 5vw;
+    color: #000;
+    z-index: 4;
   }
 `;
 const Main1 = styled.main`
@@ -56,16 +63,8 @@ const Main1 = styled.main`
       height: 55vh;
       border-radius: 50%;
       position: relative;
-      animation: slide-in 1.5s ease-out;
-
-      @keyframes slide-in {
-        from {
-          top: -500px;
-        }
-        to {
-          top: 0;
-        }
-      }
+      animation: backInDown; /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 2s;
     }
   }
 `;
@@ -74,6 +73,8 @@ function FirstPage() {
     <FirstPageStyle>
       <Header>
         <img src={ChefLogo} className="logo" />
+        <img src={ChefLogo} className="logo1" />
+
         <LongMenu />
       </Header>
       <Main1>

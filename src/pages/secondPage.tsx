@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import LearnMoreButton from '../components/shared/secondPageShared/learnMoreButton';
 import food5 from '../resource/images/food5.jpg';
+import 'animate.css';
 
 const SecondPageStyle = styled.div`
   display: flex;
@@ -25,6 +26,8 @@ const SecondPageStyle = styled.div`
     position: absolute;
     left: 110px;
     top: 250px;
+    animation: backInLeft;
+    animation-duration: 2s;
 
     p {
       font-size: 1.2rem;
@@ -37,18 +40,11 @@ const SecondPageStyle = styled.div`
     height: 75vh;
     z-index: 1;
     position: absolute;
-    animation: slide-in 1.5s ease-out;
     top: 150px;
-
-    @keyframes slide-in {
-      from {
-        right: -800px;
-      }
-      to {
-        right: 0;
-      }
-    }
+    animation: backInUp;
+    animation-duration: 2s;
   }
+
   .second_page__red-round {
     background-color: #ff0000;
     width: 250px;
@@ -58,6 +54,8 @@ const SecondPageStyle = styled.div`
     right: 250px;
     top: 10px;
     margin-top: 20px;
+    animation: backInRight;
+    animation-duration: 2s;
   }
 `;
 
