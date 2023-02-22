@@ -1,29 +1,63 @@
 import React from 'react';
 import styled from 'styled-components';
 import LearnMoreButton from '../components/shared/secondPageShared/learnMoreButton';
+import food5 from '../resource/images/food5.jpg';
 
 const SecondPageStyle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #c5c5c5;
-  padding: 10px;
+  height: 100vh;
+  padding: 40px;
+  position: relative;
 
   .second_page__article {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 22vw;
+    width: 24vw;
     padding: 10px 30px 30px 30px;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     background-color: #fff;
+    z-index: 2;
+    position: absolute;
+    left: 110px;
+    top: 250px;
 
     p {
-      font-size: 1rem;
+      font-size: 1.2rem;
       margin-bottom: 40px;
       word-spacing: 3px;
     }
+  }
+  .second_page__image {
+    width: 40vw;
+    height: 75vh;
+    z-index: 1;
+    position: absolute;
+    animation: slide-in 1.5s ease-out;
+    top: 150px;
+
+    @keyframes slide-in {
+      from {
+        right: -800px;
+      }
+      to {
+        right: 0;
+      }
+    }
+  }
+  .second_page__red-round {
+    background-color: #ff0000;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    right: 250px;
+    top: 10px;
+    margin-top: 20px;
   }
 `;
 
@@ -43,9 +77,7 @@ function SecondPage() {
         </p>
         <LearnMoreButton />
       </article>
-      <image className="second_page__image">
-        <img src="" alt="" />
-      </image>
+      <img className="second_page__image" src={food5} alt="image5" />
       <div className="second_page__red-round"></div>
     </SecondPageStyle>
   );

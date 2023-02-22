@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import FoodImageContainer from '../components/shared/firstPageShared/foodImageContainer';
 import MenuButton from '../components/shared/firstPageShared/menu-button';
@@ -52,9 +52,20 @@ const Main1 = styled.main`
     background-color: #ff0000;
 
     .first-page__img {
-      width: 25vw;
-      height: 45vh;
+      width: 30vw;
+      height: 55vh;
       border-radius: 50%;
+      position: relative;
+      animation: slide-in 1.5s ease-out;
+
+      @keyframes slide-in {
+        from {
+          top: -500px;
+        }
+        to {
+          top: 0;
+        }
+      }
     }
   }
 `;

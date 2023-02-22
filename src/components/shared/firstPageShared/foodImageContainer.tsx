@@ -11,9 +11,12 @@ const FoodImageStyled = styled.ul`
   gap: 25px;
   list-style-type: none;
 
-
   li img {
     width: 18vw;
+  }
+  li img:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
   }
 `;
 function FoodImageContainer() {
