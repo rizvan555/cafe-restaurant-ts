@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import FirstPage from './pages/firstPage';
+import FourthPage from './pages/fourthPage';
 import SecondPage from './pages/secondPage';
 import ThirdPage from './pages/thirdPage';
 
@@ -14,6 +15,7 @@ function App() {
       <FirstPage />
       <SecondPage />
       <ThirdPage />
+      <FourthPage />
     </div>
   );
 }
