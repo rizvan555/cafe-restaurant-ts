@@ -7,7 +7,7 @@ const FifthPageStyle = styled.div`
   display: flex;
   justify-content: left;
   flex-direction: column;
-  padding: 200px 0 150px 50px;
+  padding: 220px 0 150px 50px;
   background-image: url(${backgroundBurger});
   background-size: cover;
   background-position: center;
@@ -15,12 +15,14 @@ const FifthPageStyle = styled.div`
   color: #fff;
 
   h1 {
-    font-size: 1.8rem;
-    margin-bottom: -20px;
-  }
-  h2 {
     font-size: 6rem;
     margin-bottom: -10px;
+    animation: bounceInLeft;
+    animation-duration: 2s;
+  }
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: -20px;
   }
   h3 {
     font-size: 1.4rem;
@@ -31,8 +33,8 @@ const FifthPageStyle = styled.div`
 function FifthPage() {
   return (
     <FifthPageStyle>
-      <h1>MUST-TRY AMERICAN FOODS</h1>
-      <h2>Fast Food</h2>
+      <h2>MUST-TRY AMERICAN FOODS</h2>
+      <h1>Fast Food</h1>
       <h3>Just try it once</h3>
       <ViewMenuButton />
     </FifthPageStyle>
