@@ -18,7 +18,7 @@ const FourthPageStyle = styled.div`
     flex-direction: column;
     align-items: center;
     width: 30vw;
-    padding: 10px 30px 20px 30px;
+    padding: 30px;
     font-size: 1.6rem;
     background-color: #fff;
     z-index: 2;
@@ -28,9 +28,9 @@ const FourthPageStyle = styled.div`
     animation: bounceInUp;
     animation-duration: 2.5s;
 
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 60px;
+    .fourth_page_p {
+      font-size: 1rem;
+      margin: 3vh 0 8vh 0;
       word-spacing: 3px;
     }
   }
@@ -39,7 +39,7 @@ const FourthPageStyle = styled.div`
     height: 80vh;
     z-index: 1;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 200px;
     animation: bounceInLeft;
     animation-duration: 2s;
@@ -49,7 +49,7 @@ const FourthPageStyle = styled.div`
     right: 0;
     background-color: #ff0000;
     width: 90vw;
-    height: 70vh;
+    height: 60vh;
     animation: bounceInRight;
     animation-duration: 2s;
   }
@@ -59,8 +59,8 @@ function FourthPage() {
   return (
     <FourthPageStyle>
       <article className="fourth_page__article">
-        <h3>Breakfast</h3>
-        <p>
+        <h3 className="fourth_page_h3">Breakfast</h3>
+        <p className="fourth_page_p">
           Breakfast is one of the most special meals of our restaurant. Our menu
           includes local delicacies as well as international fare. Our guests
           can choose from fresh fruit juices, hot drinks, basic breakfast items

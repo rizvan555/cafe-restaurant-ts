@@ -4,21 +4,23 @@ import FifthPage from './pages/fifthPage';
 import FirstPage from './pages/firstPage';
 import FourthPage from './pages/fourthPage';
 import SecondPage from './pages/secondPage';
+import SeventhPage from './pages/seventhPage';
+import SixthPage from './pages/sixthPage';
 import ThirdPage from './pages/thirdPage';
 
-const Main = styled.main`
-  display: flex;
-`;
+const AppContainerStyle = styled.div``;
 
 function App() {
   return (
-    <div className="App">
+    <AppContainerStyle>
       <FirstPage />
       <SecondPage />
       <ThirdPage />
       <FourthPage />
       <FifthPage />
-    </div>
+      <SixthPage />
+      <SeventhPage />
+    </AppContainerStyle>
   );
 }
 

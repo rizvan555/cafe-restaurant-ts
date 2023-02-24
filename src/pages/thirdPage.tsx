@@ -10,7 +10,7 @@ const ThirdPageStyle = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 300px 30px 50px 30px;
+  padding: 300px 20px 50px 20px;
   gap: 3vw;
   font-family: Arial, Helvetica, sans-serif;
 
@@ -19,7 +19,7 @@ const ThirdPageStyle = styled.div`
       font-family: 'Kalam';
       src: url('../resource/fonts/kalam/Kalam-Regular.ttf');
     }
-    width: 25vw;
+    width: 29vw;
     color: #fff;
     padding: 20px 30px 40px 30px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -29,10 +29,10 @@ const ThirdPageStyle = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 40px;
+      gap: 20px;
     }
 
-    h1 {
+    .third_page_h1 {
       font-family: 'Kalam', cursive;
       display: flex;
       justify-content: center;
@@ -41,24 +41,24 @@ const ThirdPageStyle = styled.div`
       border-radius: 50%;
       background-color: red;
       padding: 20px;
-      width: 40px;
-      height: 40px;
+      width: 80px;
+      height: 80px;
       animation: bounceInLeft;
       animation-duration: 2s;
     }
-    h2 {
+    .third_page_h2 {
       font-size: 1.8rem;
       font-weight: 200;
       animation: bounceInRight;
       animation-duration: 2s;
       letter-spacing: 2px;
     }
-    p {
+    .third_page_p {
       color: #dddddd;
       opacity: 0.8;
       font-size: 1.2rem;
       font-style: italic;
-      margin-bottom: 40px;
+      margin: 5vh 0 8vh 0;
     }
     a {
       font-size: 1.4rem;
@@ -112,10 +112,10 @@ function ThirdPage() {
         return (
           <section>
             <div className="head">
-              <h1>{menu.number}</h1>
-              <h2>{menu.title}</h2>
+              <h1 className="third_page_h1">{menu.number}</h1>
+              <h2 className="third_page_h2">{menu.title}</h2>
             </div>
-            <p>{menu.text}</p>
+            <p className="third_page_p">{menu.text}</p>
             <a href="#">{menu.link}</a>
           </section>
         );

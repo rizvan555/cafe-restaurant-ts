@@ -10,7 +10,7 @@ const SecondPageStyle = styled.div`
   align-items: center;
   background-color: #c5c5c5;
   height: 100vh;
-  padding: 40px;
+  padding: 15vh;
   position: relative;
 
   .second_page__article {
@@ -18,37 +18,39 @@ const SecondPageStyle = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 24vw;
-    padding: 10px 30px 30px 30px;
+    width: 26vw;
+    padding: 20px 25px 30px 25px;
     font-size: 1.6rem;
     background-color: #fff;
     z-index: 2;
     position: absolute;
-    left: 110px;
-    top: 250px;
+    left: 240px;
+    bottom: 50px;
     animation: backInLeft;
     animation-duration: 2s;
 
-    p {
-      font-size: 1.2rem;
+    .second_page_p {
+      font-size: 0.9rem;
       margin-bottom: 40px;
       word-spacing: 3px;
+      word-break: keep-all;
     }
   }
   .second_page__image {
-    width: 40vw;
-    height: 75vh;
+    width: 35vw;
+    height: 70vh;
     z-index: 1;
     position: absolute;
-    top: 150px;
+    right: 350px;
+    top: 130px;
     animation: backInUp;
     animation-duration: 2s;
   }
 
   .second_page__red-round {
     background-color: #ff0000;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     position: absolute;
     right: 250px;
@@ -63,8 +65,8 @@ function SecondPage() {
   return (
     <SecondPageStyle>
       <article className="second_page__article">
-        <h3>Breakfast</h3>
-        <p>
+        <h3 className="second_page_h3">Breakfast</h3>
+        <p className="second_page_p">
           Breakfast is one of the most special meals of our restaurant. Our menu
           includes local delicacies as well as international fare. Our guests
           can choose from fresh fruit juices, hot drinks, basic breakfast items

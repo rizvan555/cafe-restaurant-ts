@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
       src: url('../resource/fonts/Poppins-Italic.ttf');
     }
     font-size: 10px;
+    font-family: 'Poppins', sans-serif;
   }
 `;
 
