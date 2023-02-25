@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import backgroundMexican from '../resource/images/backgroundMexican.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ThirdPageStyle = styled.div`
   background-image: url(${backgroundMexican});
@@ -68,6 +70,9 @@ const ThirdPageStyle = styled.div`
 `;
 
 function ThirdPage() {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   const menuWindows = [
     {
       number: '01',
@@ -112,8 +117,12 @@ function ThirdPage() {
         return (
           <section>
             <div className="head">
-              <h1 className="third_page_h1">{menu.number}</h1>
-              <h2 className="third_page_h2">{menu.title}</h2>
+              <h1 className="third_page_h1" data-aos="fade-left">
+                {menu.number}
+              </h1>
+              <h2 className="third_page_h2" data-aos="fade-right">
+                {menu.title}
+              </h2>
             </div>
             <p className="third_page_p">{menu.text}</p>
             <a href="#">{menu.link}</a>

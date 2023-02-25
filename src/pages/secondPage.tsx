@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import LearnMoreButton from '../components/shared/secondPageShared/learnMoreButton';
 import food5 from '../resource/images/food5.jpg';
 import 'animate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const SecondPageStyle = styled.div`
   display: flex;
@@ -62,9 +64,12 @@ const SecondPageStyle = styled.div`
 `;
 
 function SecondPage() {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
     <SecondPageStyle>
-      <article className="second_page__article">
+      <article className="second_page__article" data-aos="fade-left">
         <h3 className="second_page_h3">Breakfast</h3>
         <p className="second_page_p">
           Breakfast is one of the most special meals of our restaurant. Our menu
@@ -77,8 +82,13 @@ function SecondPage() {
         </p>
         <LearnMoreButton />
       </article>
-      <img className="second_page__image" src={food5} alt="image5" />
-      <div className="second_page__red-round"></div>
+      <img
+        className="second_page__image"
+        src={food5}
+        alt="image5"
+        data-aos="fade-up"
+      />
+      <div className="second_page__red-round" data-aos="fade-right"></div>
     </SecondPageStyle>
   );
 }

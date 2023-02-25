@@ -16,6 +16,7 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
     "gatsby-background-image": "^1.6.0",
     "react": "^18.2.0",
@@ -52,6 +53,7 @@
   },
   "devDependencies": {
     "@mui/icons-material": "^5.11.9",
+    "@types/aos": "^3.0.4",
     "@types/styled-components": "^5.1.26",
     "file-loader": "^6.2.0",
     "ts-loader": "^9.4.2",

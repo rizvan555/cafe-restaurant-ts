@@ -31,15 +31,16 @@ const Main1 = styled.main`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0px 20px;
+    padding: 50px 30px;
     gap: 40px;
   }
   .first_page__article {
-    width: 50%;
+    width: 60%;
     font-size: 1rem;
   }
   .first_page__article h1 {
     font-size: 3rem;
+    font-weight: 600;
   }
   .first_page__article p {
     margin-bottom: 30px;
@@ -63,7 +64,7 @@ const Main1 = styled.main`
       height: 55vh;
       border-radius: 50%;
       position: relative;
-      animation: backInDown; /* referring directly to the animation's @keyframe declaration */
+      animation: bounceInDown; /* referring directly to the animation's @keyframe declaration */
       animation-duration: 2s;
     }
   }

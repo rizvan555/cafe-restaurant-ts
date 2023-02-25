@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import LearnMoreButton from '../components/shared/secondPageShared/learnMoreButton';
 import food5 from '../resource/images/food5.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const FourthPageStyle = styled.div`
   display: flex;
@@ -56,9 +58,12 @@ const FourthPageStyle = styled.div`
 `;
 
 function FourthPage() {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
     <FourthPageStyle>
-      <article className="fourth_page__article">
+      <article className="fourth_page__article" data-aos="fade-up">
         <h3 className="fourth_page_h3">Breakfast</h3>
         <p className="fourth_page_p">
           Breakfast is one of the most special meals of our restaurant. Our menu
@@ -71,9 +76,14 @@ function FourthPage() {
         </p>
         <LearnMoreButton />
       </article>
-      <img className="fourth_page__image" src={food5} alt="image5" />
+      <img
+        className="fourth_page__image"
+        src={food5}
+        alt="image5"
+        data-aos="fade-left"
+      />
       <div className="fourth_page__red-round"></div>
-      <div className="fourth_page__red-box"></div>
+      <div className="fourth_page__red-box" data-aos="fade-right"></div>
     </FourthPageStyle>
   );
 }

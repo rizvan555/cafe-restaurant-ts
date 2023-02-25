@@ -9,7 +9,7 @@ const NinthPageStyled = styled.div`
   background-color: #000;
   height: 100vh;
   color: #fff;
-  padding: 70px 40px;
+  padding: 0 40px;
 
   .image-container {
     position: relative;
@@ -17,26 +17,28 @@ const NinthPageStyled = styled.div`
 
   .image-container__img {
     width: 35vw;
-    height: 75vh;
+    height: 94vh;
     border: 10px solid transparent;
     background-clip: padding-box;
     background-image: linear-gradient(to right, red 50%, black 50%);
     z-index: 1;
     position: absolute;
-    top: 4vh;
+    bottom: 3vh;
   }
   .image-container__red-box {
     width: 20vw;
-    height: 83vh;
+    height: 100vh;
     background-color: #ff0000;
     position: absolute;
     left: 17vw;
+    bottom: 1px;
     z-index: 0;
   }
   .contact-container {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: center;
     margin: 0 20px 0 auto;
     padding: 80px 20px;
     text-align: center;
@@ -75,12 +77,13 @@ const NinthPageStyled = styled.div`
     gap: 20px;
   }
   .location-box__address {
-    width: 10vw;
+    width: 20vw;
     font-size: 1rem;
   }
   .location-box__h3 {
     margin-bottom: 5vh;
     letter-spacing: 2px;
+    font-weight: bold;
   }
   .social-media-box {
     display: flex;
@@ -96,6 +99,7 @@ const NinthPageStyled = styled.div`
   .follow-box__h3 {
     margin-bottom: 5vh;
     letter-spacing: 2px;
+    font-weight: bold;
   }
   .facebook-box,
   .instagram-box,

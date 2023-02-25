@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import ViewMenuButton from '../components/shared/fifthPageShared/viewMenuButton';
 import backgroundBurger from '../resource/images/backgroundBurger.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const FifthPageStyle = styled.div`
   display: flex;
@@ -32,10 +34,14 @@ const FifthPageStyle = styled.div`
 `;
 
 function FifthPage() {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
   return (
     <FifthPageStyle>
       <h2>MUST-TRY AMERICAN FOODS</h2>
-      <h1>Fast Food</h1>
+      <h1 data-aos="fade-left">Fast Food</h1>
       <h3>Just try it once</h3>
       <ViewMenuButton />
     </FifthPageStyle>

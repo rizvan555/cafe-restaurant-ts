@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import food1 from '../../../resource/images/food1.jpg';
 import food2 from '../../../resource/images/food2.jpg';
 import food3 from '../../../resource/images/food3.jpg';
 import food4 from '../../../resource/images/food4.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const FoodImageStyled = styled.ul`
   display: flex;
@@ -13,8 +15,8 @@ const FoodImageStyled = styled.ul`
 
   li img {
     width: 18vw;
-    animation: backInRight;
-    animation-duration: 2s;
+    animation: bounceInRight;
+    animation-duration: 3s;
   }
   li img:hover {
     transform: scale(1.1);
@@ -23,28 +25,31 @@ const FoodImageStyled = styled.ul`
 `;
 
 function FoodImageContainer() {
+  useEffect(() => {
+    AOS.init({ once: false });
+  }, []);
+
   return (
     <div>
       <FoodImageStyled>
         <li>
           <a href="#">
-            <img src={food1} alt="food1" />
+            <img src={food1} alt="food1" data-aos="fade-right" />
           </a>
         </li>
         <li>
           <a href="#">
-            <img src={food2} alt="food2" />
+            <img src={food2} alt="food2" data-aos="fade-right" />
           </a>
         </li>
         <li>
           <a href="#">
-            <img src={food3} alt="food3" />
+            <img src={food3} alt="food3" data-aos="fade-right" />
           </a>
         </li>
         <li>
           <a href="#">
-            {' '}
-            <img src={food4} alt="food4" />
+            <img src={food4} alt="food4" data-aos="fade-right" />
           </a>
         </li>
       </FoodImageStyled>

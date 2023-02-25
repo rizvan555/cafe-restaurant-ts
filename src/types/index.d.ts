@@ -4,3 +4,4 @@ declare module '*.png';
 
 declare module '*.woff';
 declare module '*.ttf';
+declare module 'aos';
