@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { GiHamburger } from 'react-icons/gi';
 import { FaPizzaSlice } from 'react-icons/fa';
 import { GiKebabSpit } from 'react-icons/gi';
+import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 
 const StyledCarousel = styled(Carousel)`
   display: flex;
@@ -28,8 +29,14 @@ const StyledCarouselItems = styled(Carousel.Item)`
 `;
 
 function DarkVariantExample() {
+  const CustomPrevIcon = <FiChevronLeft size={24} style={{ color: '#000' }} />;
+  const CustomNextIcon = <FiChevronRight size={24} style={{ color: '#000' }} />;
   return (
-    <StyledCarousel variant="dark">
+    <StyledCarousel
+      variant="dark"
+      nextIcon={CustomNextIcon}
+      prevIcon={CustomPrevIcon}
+    >
       <StyledCarouselItems>
         <GiHamburger size={50} />
         <h3 className="title_food-slider">Burger</h3>

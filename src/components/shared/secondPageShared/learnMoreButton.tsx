@@ -11,9 +11,9 @@ const LearButtonStyled = styled.button`
   font-weight: bold;
   font-size: 0.8rem;
 `;
-function LearnMoreButton() {
+function LearnMoreButton(props:any) {
   return (
-    <LearButtonStyled>
+    <LearButtonStyled style={props.style}>
       <span>LEARN MORE</span>
     </LearButtonStyled>
   );

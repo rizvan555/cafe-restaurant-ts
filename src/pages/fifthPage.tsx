@@ -16,17 +16,18 @@ const FifthPageStyle = styled.div`
 
   h1 {
     font-size: 6rem;
-    margin-bottom: -10px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
     animation: bounceInLeft;
     animation-duration: 2s;
   }
   h2 {
     font-size: 1.6rem;
-    margin-bottom: -20px;
+    margin-bottom: 20px;
   }
   h3 {
     font-size: 1.4rem;
-    margin-bottom: 60px;
+    margin-bottom: 90px;
   }
 `;
 
