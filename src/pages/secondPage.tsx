@@ -61,6 +61,59 @@ const SecondPageStyle = styled.div`
     animation: backInRight;
     animation-duration: 2s;
   }
+  @media only screen and (max-width: 667px) {
+    height: 100vh;
+    padding: 5vh;
+    position: relative;
+
+    .second_page__article {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 22vw;
+      padding: 10px;
+      background-color: #fff;
+      z-index: 2;
+      position: absolute;
+      left: 120px;
+      bottom: 10px;
+      animation: backInLeft;
+      animation-duration: 2s;
+      .second_page_h3 {
+        font-size: 0.9rem;
+      }
+      .second_page_p {
+        font-size: 0.4rem;
+        margin-bottom: 20px;
+        word-spacing: 3px;
+        word-break: keep-all;
+      }
+    }
+    .second_page__image {
+      width: 45vw;
+      height: 65vh;
+      z-index: 1;
+      position: absolute;
+      right: 130px;
+      top: 60px;
+      animation: backInUp;
+      animation-duration: 2s;
+    }
+
+    .second_page__red-round {
+      background-color: #ff0000;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      position: absolute;
+      right: 90px;
+      top: 10px;
+      margin-top: 20px;
+      animation: backInRight;
+      animation-duration: 2s;
+    }
+  }
 `;
 
 function SecondPage() {

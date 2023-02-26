@@ -4,11 +4,11 @@ import EighthPage from './pages/eighthPage';
 import FifthPage from './pages/fifthPage';
 import FirstPage from './pages/firstPage';
 import FourthPage from './pages/fourthPage';
-import NinthPage from './pages/ninthPage';
 import SecondPage from './pages/secondPage';
 import SeventhPage from './pages/seventhPage';
 import SixthPage from './pages/sixthPage';
 import ThirdPage from './pages/thirdPage';
+import FooterPage from './pages/footerPage';
 
 const AppContainerStyle = styled.div``;
 
@@ -23,7 +23,7 @@ function App() {
       <SixthPage />
       <SeventhPage />
       <EighthPage />
-      <NinthPage />
+      <FooterPage />
     </AppContainerStyle>
   );
 }

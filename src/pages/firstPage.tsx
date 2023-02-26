@@ -12,7 +12,12 @@ const Header = styled.header`
   justify-content: center;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
+  padding: 10px 60px 10px 30px;
+  .header__left-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
   .logo {
     width: 5vw;
     color: #000;
@@ -24,6 +29,25 @@ const Header = styled.header`
     color: #000;
     z-index: 4;
   }
+  .restaurant {
+    letter-spacing: 2px;
+    color: #ff0000;
+    font-style: italic;
+  }
+
+  @media only screen and (max-width: 667px) {
+    padding: 10px 60px;
+
+    .header__left-box {
+      gap: 10px;
+    }
+    .logo {
+      width: 5vw;
+    }
+    .restaurant {
+      font-size: 1.2rem;
+    }
+  }
 `;
 const Main1 = styled.main`
   .first_page__section {
@@ -31,16 +55,17 @@ const Main1 = styled.main`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 50px 30px;
-    gap: 40px;
+    padding: 80px 30px;
+    gap: 90px;
   }
   .first_page__article {
     width: 60%;
     font-size: 1rem;
   }
   .first_page__article h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
+    margin-bottom: 30px;
   }
   .first_page__article p {
     margin-bottom: 30px;
@@ -68,14 +93,50 @@ const Main1 = styled.main`
       animation-duration: 2s;
     }
   }
+  @media only screen and (max-width: 667px) {
+    .first_page__section {
+      padding: 30px 10px;
+    }
+    .first_page__article {
+      width: 40%;
+    }
+    .first_page__article h1 {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+    .first_page__article p {
+      margin-bottom: 30px;
+      font-size: 0.6rem;
+    }
+    .center-box {
+      margin-bottom: -20px;
+    }
+    .first_page__chef-image-box {
+      width: 40vw;
+      height: 30vh;
+      background-color: #ff0000;
+
+      .first-page__img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        position: relative;
+        animation: bounceInDown; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+      }
+    }
+  }
 `;
+
 function FirstPage() {
   return (
     <FirstPageStyle>
       <Header>
-        <img src={ChefLogo} className="logo" />
-        <img src={ChefLogo} className="logo1" />
-
+        <div className="header__left-box">
+          <img src={ChefLogo} className="logo" />
+          <img src={ChefLogo} className="logo1" />
+          <h1 className="restaurant">Restaurant</h1>
+        </div>
         <LongMenu />
       </Header>
       <Main1>

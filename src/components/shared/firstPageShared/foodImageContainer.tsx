@@ -22,6 +22,22 @@ const FoodImageStyled = styled.ul`
     transform: scale(1.1);
     transition: all 0.4s ease-in-out;
   }
+  @media only screen and (max-width: 667px) {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 25px;
+
+    li img {
+      width: 48vw;
+      animation: bounceInRight;
+      animation-duration: 3s;
+    }
+    li img:hover {
+      transform: scale(1.1);
+      transition: all 0.4s ease-in-out;
+    }
+  }
 `;
 
 function FoodImageContainer() {

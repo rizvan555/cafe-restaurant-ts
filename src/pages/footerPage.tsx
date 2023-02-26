@@ -115,7 +115,7 @@ const NinthPageStyled = styled.div`
   }
 `;
 
-function NinthPage() {
+function FooterPage() {
   return (
     <NinthPageStyled>
       <div className="image-container">
@@ -181,4 +181,4 @@ function NinthPage() {
   );
 }
 
-export default NinthPage;
+export default FooterPage;
