@@ -78,13 +78,12 @@ const SecondPageStyle = styled.div`
       position: absolute;
       left: 120px;
       bottom: 10px;
-      animation: backInLeft;
-      animation-duration: 2s;
+
       .second_page_h3 {
         font-size: 0.9rem;
       }
       .second_page_p {
-        font-size: 0.4rem;
+        font-size: 0.3rem;
         margin-bottom: 20px;
         word-spacing: 3px;
         word-break: keep-all;
@@ -97,8 +96,6 @@ const SecondPageStyle = styled.div`
       position: absolute;
       right: 130px;
       top: 60px;
-      animation: backInUp;
-      animation-duration: 2s;
     }
 
     .second_page__red-round {

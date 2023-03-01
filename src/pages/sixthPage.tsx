@@ -41,7 +41,7 @@ const SixthPageStyle = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30vw;
+    width: 35vw;
     background-color: #060606;
     color: #fff;
     padding: 50px 20px;
@@ -52,6 +52,57 @@ const SixthPageStyle = styled.div`
     .price {
       font-size: 1.5rem;
       margin-bottom: 30px;
+    }
+  }
+  @media only screen and (max-width: 667px) {
+    padding: 50px 20px;
+
+    .sixth-page__header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 60vw;
+      margin: 0 auto;
+
+      h1 {
+        font-size: 1.1rem;
+      }
+      p {
+        font-size: 0.7rem;
+        text-align: center;
+      }
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 20px;
+    }
+    div {
+      display: flex;
+      width: 60vw;
+    }
+    img {
+      width: 35vw;
+    }
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 30vw;
+      background-color: #060606;
+      color: #fff;
+      padding: 50px 20px;
+
+      h2 {
+        font-size: 1rem;
+      }
+      .price {
+        font-size: 0.8rem;
+        margin-bottom: 30px;
+      }
     }
   }
 `;

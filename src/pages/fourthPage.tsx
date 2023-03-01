@@ -55,6 +55,53 @@ const FourthPageStyle = styled.div`
     animation: bounceInRight;
     animation-duration: 2s;
   }
+  @media only screen and (max-width: 667px) {
+    display: flex;
+    background-color: #c5c5c5;
+    height: 100vh;
+    position: relative;
+
+    .fourth_page__article {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 30vw;
+      padding: 15px;
+      font-size: 1rem;
+      background-color: #fff;
+      z-index: 2;
+      position: absolute;
+      right: 50px;
+      bottom: 10px;
+
+      .fourth_page_p {
+        font-size: 0.4rem;
+        margin: 3vh 0 3vh 0;
+        word-spacing: 3px;
+      }
+    }
+    .fourth_page__image {
+      width: 65vw;
+      height: 75vh;
+      z-index: 1;
+      position: absolute;
+      top: 30px;
+      left: 100px;
+      animation: bounceInLeft;
+      animation-duration: 2s;
+    }
+    .fourth_page__red-box {
+      position: absolute;
+      right: 0;
+      top: 20vh;
+      background-color: #ff0000;
+      width: 90vw;
+      height: 60vh;
+      animation: bounceInRight;
+      animation-duration: 2s;
+    }
+  }
 `;
 
 function FourthPage() {

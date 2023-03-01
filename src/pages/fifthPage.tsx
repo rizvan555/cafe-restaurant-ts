@@ -31,6 +31,25 @@ const FifthPageStyle = styled.div`
     font-size: 1.4rem;
     margin-bottom: 90px;
   }
+  @media only screen and (max-width: 667px) {
+    padding: 20vh 0 20vh 50px;
+
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+      animation: bounceInLeft;
+      animation-duration: 2s;
+    }
+    h2 {
+      font-size: 0.8rem;
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 15vh;
+    }
+  }
 `;
 
 function FifthPage() {

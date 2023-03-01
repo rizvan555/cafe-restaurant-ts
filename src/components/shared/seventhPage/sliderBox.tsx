@@ -14,6 +14,11 @@ const StyledCarousel = styled(Carousel)`
   height: 50vh;
   background-color: #fff;
   padding: 30px 20px;
+  @media only screen and (max-width: 667px) {
+    width: 50vw;
+    height: 60vh;
+    padding: 10px;
+  }
 `;
 const StyledCarouselItems = styled(Carousel.Item)`
   text-align: center;
@@ -25,6 +30,15 @@ const StyledCarouselItems = styled(Carousel.Item)`
   .contain-foods-slider {
     word-break: keep-all;
     font-size: 1rem;
+  }
+  @media only screen and (max-width: 667px) {
+    .title_food-slider {
+      margin: 3vh;
+      font-size: 1rem;
+    }
+    .contain-foods-slider {
+      font-size: 0.4rem;
+    }
   }
 `;
 

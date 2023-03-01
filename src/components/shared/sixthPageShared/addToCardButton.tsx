@@ -10,6 +10,14 @@ const AddToCardStyle = styled.button`
   color: #fff;
   font-weight: bold;
   font-size: 0.8rem;
+  @media only screen and (max-width: 667px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14vw;
+    height: 5vh;
+    font-size: 0.3rem;
+  }
 `;
 function AddToCardButton() {
   return (

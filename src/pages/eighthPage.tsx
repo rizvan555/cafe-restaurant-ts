@@ -61,6 +61,56 @@ const EighthPageStyled = styled.div`
     font-size: 1.2rem;
     margin-bottom: 80px;
   }
+  .little-button {
+    display: none;
+  }
+
+  @media only screen and (max-width: 667px) {
+    .eighthPage__article {
+      width: 50vw;
+      padding: 20px 20px 20px 30px;
+      right: 10vw;
+      top: 20vh;
+      word-break: keep-all;
+    }
+    .eighthPage__red-round {
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      right: 20px;
+      top: 6px;
+      margin-top: 20px;
+    }
+    .eighthPage__image1 {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      position: absolute;
+      left: 10vw;
+    }
+    .eighthPage__image2 {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      position: absolute;
+      top: 60vh;
+      left: 5vw;
+    }
+    .eighthPage__article__h2 {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .eighthPage__article__p {
+      font-size: 0.6rem;
+      margin-bottom: 8vh;
+    }
+    .little-button {
+      display: block;
+    }
+    .big-button {
+      display: none;
+    }
+  }
 `;
 
 function EighthPage() {
@@ -75,7 +125,12 @@ function EighthPage() {
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur.
         </p>
-        <LearnMoreButton style={{ width: '200px', padding: '15px' }} />
+        <span className="big-button">
+          <LearnMoreButton style={{ width: '200px', padding: '15px' }} />
+        </span>
+        <span className="little-button">
+          <LearnMoreButton />
+        </span>
       </article>
       <img
         src={delivery1}

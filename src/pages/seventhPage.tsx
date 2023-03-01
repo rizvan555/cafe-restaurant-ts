@@ -10,7 +10,7 @@ const SeventhPageStyle = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
-  padding: 200px 50px;
+  padding: 15vh 6vw;
 `;
 function SeventhPage() {
   return (

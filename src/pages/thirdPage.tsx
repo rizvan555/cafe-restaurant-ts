@@ -67,6 +67,63 @@ const ThirdPageStyle = styled.div`
       color: #fff;
     }
   }
+
+  @media only screen and (max-width: 667px) {
+    background-image: url(${backgroundMexican});
+    background-position: center;
+    background-size: cover;
+    gap: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -40vh;
+
+    section {
+      @font-face {
+        font-family: 'Kalam';
+        src: url('../resource/fonts/kalam/Kalam-Regular.ttf');
+      }
+      width: 50vw;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 5px;
+      padding: 20px;
+
+      .head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .third_page_h1 {
+        font-family: 'Kalam', cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        border-radius: 50%;
+        background-color: red;
+        padding: 5px;
+        width: 50px;
+        height: 50px;
+      }
+      .third_page_h2 {
+        font-size: 1.2rem;
+        font-weight: 200;
+        letter-spacing: 2px;
+      }
+      .third_page_p {
+        color: #dddddd;
+        opacity: 0.8;
+        font-size: 0.8rem;
+        font-style: italic;
+        margin: 5vh 0 8vh 0;
+      }
+      a {
+        font-size: 0.8rem;
+        color: #fff;
+      }
+    }
+  }
 `;
 
 function ThirdPage() {

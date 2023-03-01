@@ -31,7 +31,6 @@ const FoodImageStyled = styled.ul`
     li img {
       width: 48vw;
       animation: bounceInRight;
-      animation-duration: 3s;
     }
     li img:hover {
       transform: scale(1.1);

@@ -15,13 +15,13 @@ const LearButtonStyled = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 12vw;
-    height: 5vh;
+    padding: 5px 10px;
+    width: 13vw;
     border-radius: 25px;
     border: none;
     background-color: #ff0000;
     color: #fff;
-    font-size: 0.3rem;
+    font-size: 0.25rem;
   }
 `;
 function LearnMoreButton(props: any) {

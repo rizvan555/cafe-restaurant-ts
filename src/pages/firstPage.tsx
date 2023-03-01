@@ -86,10 +86,10 @@ const Main1 = styled.main`
 
     .first-page__img {
       width: 30vw;
-      height: 55vh;
+      height: 53vh;
       border-radius: 50%;
       position: relative;
-      animation: bounceInDown; /* referring directly to the animation's @keyframe declaration */
+      animation: bounceInDown;
       animation-duration: 2s;
     }
   }
@@ -121,8 +121,6 @@ const Main1 = styled.main`
         height: 140px;
         border-radius: 50%;
         position: relative;
-        animation: bounceInDown; /* referring directly to the animation's @keyframe declaration */
-        animation-duration: 2s;
       }
     }
   }
